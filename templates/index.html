@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Classification</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        MedianIncome:  <input type="number" name="MedInc"></br>
+        HouseAge:   <input type="number" name="HouseAge"></br>
+	AveRooms:  <input type="number" name="AveRooms"></br>
+	AveBedrms:   <input type="number" name="AveBedrms"></br>
+	Population:  <input type="number" name="Population"></br>
+	AveOccup:  <input type="number" name="AveOccup"></br>
+	Latitude:  <input type="number" name="Latitude"></br>
+	Longitude:  <input type="number" name="Longitude"></br>
+        <input type=submit value=Submit>
+   </form>
+    My final prediction: {{ predict }}
+</body>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
